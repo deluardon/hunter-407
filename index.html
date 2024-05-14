@@ -18,6 +18,9 @@
       rel="stylesheet" />
 
     <style>
+        *{
+            background-color: white;
+        }
       body {
         font-family: "Poppins";
       }
@@ -42,17 +45,17 @@
     </style>
   </head>
   <body>
-    <header class="bg-[#e8f5ff]">
-      <nav id="nav-container" class="h-[806px] w-[1440px] mx-auto">
+    <header class=" container">
+      <nav id="nav-container" class="lg:h-[806px] w-[1440px] mx-auto">
         <!-- 
             menu section
          -->
-        <div class="flex justify-between pt-4">
+        <div class="flex flex-row lg:justify-between pt-4">
           <div class="ml-36">
             <h1 class="text-[#403F3F] text-2xl font-bold">Hot Gadgets</h1>
           </div>
           <div class="mr-36">
-            <button class="btn btn-primary py-4 px-10 text-white">
+            <button class="btn btn-primary py-4 px-10 text-black">
               <a href="">Sign Up</a>
             </button>
           </div>
@@ -69,12 +72,12 @@
             the majority have suffered alteration in some form, by injected
             humou.
           </p>
-          <button class="mt-8 btn btn-primary text-white">
+          <button class="mt-8 btn btn-primary ">
             <a href="">Buy Now</a>
           </button>
         </div>
       </nav>
-      <div class="h-12">
+      <div class="h-12 w-50% lg:w-full">
         <img
           id="phone-photo"
           class="w-[293px] h-[585px]"
@@ -82,7 +85,7 @@
           alt="" />
         <img
           id="phone-photo2"
-          class="w-[218px] h-[438px]"
+          class="lg:w-[218px] h-[438px]"
           src="./image/pngwing 1.png"
           alt="" />
         <img
@@ -97,10 +100,16 @@
        <div class="text-center">
         <h1 class="text-[#100F0F] text-3xl font-semibold">Search your phone</h1>
         <div class="pb-8 pt-8">
-          <input  type="text" class="grow bg-[#100F0F0D] w-[752px] h-[64px] rounded-lg" placeholder="Search" />
-          <button class="btn btn-primary h-[64px] w-[150px]">Search</button>
+          <input id="search-flid"  type="text" class="grow bg-[#100F0F0D] w-[752px] h-[64px] rounded-lg" placeholder="Search" />
+          <button onclick="handelSearch()" class="btn btn-primary h-[64px] w-[150px]">Search</button>
         </div>
        </div>
+      </section>
+      <section>
+        <div id="phone-container" class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            
+               
+        </div>
       </section>
     </main>
     <footer></footer>
